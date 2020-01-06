@@ -9,9 +9,14 @@
         </div>
         <div class="top-info-wrap">
             <ul class="top-info-list clearfix">
-                <li><a href="#">管理员</a></li>
-                <li><a href="#">修改密码</a></li>
-                <li><a href="#">退出</a></li>
+                <li><a href="#">{{ Auth::user()->name }}</a></li>
+                <li><a href="{{route('password.request')}}">修改密码</a></li>
+                <li>
+                    <form action="{{ route('logout') }}" method="post">
+                        @csrf
+                        <button style="background-color: black; color: white;" type="submit">退出</button>
+                    </form>
+                </li>
             </ul>
         </div>
     </div>
