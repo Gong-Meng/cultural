@@ -14,7 +14,10 @@
 Route::get("/","IndexController@index")->name("index");
 
 //新闻资讯路由
-Route::resource("news","NewsController");
+Route::resource("new","NewsController");
+
+//用户列表
+Route::get("user","UserController@index")->name('user.index');
 
 
 //用户登录路由
