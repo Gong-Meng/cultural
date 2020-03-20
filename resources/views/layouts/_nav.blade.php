@@ -11,6 +11,9 @@
             <ul class="sub-menu">
                 <li><a href="{{ route('user.index') }}"><i class="icon-font">&#xe008;</i>用户管理</a></li>
             </ul>
+            <ul class="sub-menu">
+                <li><a href="{{ route('log.index') }}"><i class="icon-font">&#xe008;</i>日志管理</a></li>
+            </ul>
         </li>
     </ul>
 </div>

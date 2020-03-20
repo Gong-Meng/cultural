@@ -19,6 +19,9 @@ Route::resource("new","NewsController");
 //用户列表
 Route::get("user","UserController@index")->name('user.index');
 
+//日志管理路由
+Route::get("log","LogController@index")->name("log.index");
+
 
 //用户登录路由
 Route::get("login","Auth\LoginController@showLoginForm")->name('login');
